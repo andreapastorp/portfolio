@@ -64,4 +64,8 @@ node_modules/
 # dotenv environment variables file
 .env
 
+# vs config
 .vs/
+
+# virtual environment
+venv/

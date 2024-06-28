@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      ".runtimeconfig.json",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "node_modules",
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

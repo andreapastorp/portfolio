@@ -46,8 +46,8 @@
 
             <nav>
               <ul>
-                <li><a class="header header-active" href="{{ url_for('home')}}">Work</a></li>
-                <li><a class="header" href="{{ url_for('about')}}">About</a></li>
+                <li><a class="header {% if request.endpoint == 'home' %}header-active{% endif %}" href="{{ url_for('home')}}">Work</a></li>
+                <li><a class="header {% if request.endpoint == 'about' %}header-active{% endif %}" href="{{ url_for('about')}}">About</a></li>
               </ul>
             </nav>
 

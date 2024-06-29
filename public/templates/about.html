@@ -1,114 +1,139 @@
 {% extends "layout.html" %}
 
-{% block title %}
+  {% block title %}
 Andrea Pastor - Product and Design portfolio
 {% endblock %}
 
 {% block main %}
-      <!-- Hero -->
-      <div class="section-main-hero">
-        <div class="container">
+<!-- Hero -->
+<div class="section-main-hero">
+  <div class="container">
 
-          <div class="image-container">
-            <img class="hero-image" src="./img/Andrea.png" alt="">
+    <div class="image-container">
+      <img class="hero-image" src="../static/img/Andrea.png" alt="">
+    </div>
+
+    <div class="hero-text">
+
+      <h1 class="big">Nice to meet you.</h1>
+      <p class="highlight">I am a Product Manager. A Service Design Master graduate at Politecnico di Milano with a multidisciplinary background: BA in business engineering, 9-year work experience with a focus on technology, UX and strategy.
+        <br><br>I love learning new things, work-related or not. I enjoy traveling and have a passion for cooking. 🚀👩‍🍳</p>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Resume -->
+
+<div class="section-resume">
+  <div class="container">
+    <h1>Résumé</h1>
+
+    <div class="resume">
+      <div class="resume-column">
+
+        <div class="resume-section">
+          <h2>Work</h2>
+
+          <div class="resume-section">
+            <p><strong>Product Manager</strong> @ IDEXX Animana 
+              <br><em>2020 - 2021</em></p>
+            <p class="mini">Reponsible for Product vision, strategy, and roadmap, and increasing operational efficiencies in the Product team.</p>
           </div>
 
-          <div class="hero-text">
-
-            <h1 class="big">Nice to meet you.</h1>
-            <p class="highlight">I am a Service Designer / Product Owner / Project Manager trio. A Service Design Master graduate at Politecnico di Milano with a multidisciplinary background: BA in business engineering, 4-year work experience with a focus on technology and UX and recent experience with services.
-            <br><br>I love learning new things, work-related or not. I enjoy traveling and have a passion for cooking. 🚀👩‍🍳</p>
-
+          <div class="resume-section">
+            <p><strong>Product Owner</strong> @ bunq
+              <br><em>2020 - 2021</em></p>
+            <p class="mini">Responsible for the payments strategy. Analyzed market opportunities and worked with merchants to improve localized offering.</p>
           </div>
 
+          <div class="resume-section">
+            <p><strong>Service designer</strong> @ Philips
+              <br><em>2020 - 2021</em></p>
+            <p class="mini">Supported projects across business channels and applied design-led activities.</p>
+          </div>
+
+          <div class="resume-section">
+            <p><strong>Design researcher</strong> @ Oblo
+              <br><em>2017 - 2019</em></p>
+            <p class="mini">Evolved the project with further research, content and initiatives.</p>
+          </div>
+
+          <div class="resume-section">
+            <p><strong>Project Manager</strong> @ LIQUID
+              <br><em>2017 - 2019</em></p>
+            <p class="mini">Lead the design process for a web software development cross-functional team.</p>
+          </div>
+
+          <div class="resume-section">
+            <p><strong>Co-Funder</strong> @ LikeHome
+              <br><em>2017 - 2018</em></p>
+            <p class="mini">Lead and managed the design strategy.</p>
+          </div>
+
+          <div class="resume-section">
+            <p><strong>Project Manager</strong> @ Tekton Labs
+              <br><em>2015 - 2017</em></p>
+            <p class="mini">Managed web and mobile software development projects. Responsible for ideation and design deliverables.</p>
+          </div>
         </div>
       </div>
 
+      <div class="resume-column">
 
-      <!-- Resume -->
+        <div class="resume-section">
+          <h2>Education</h2>
+          <div class="resume-section">
+            <p><strong>Master in Service Design</strong> @ Politecnico di Milano
+              <br><em>2019 - 2021</em></p>
+            <p class="mini">Graduated cum laude.</p>
+          </div>
 
-      <div class="section-resume">
-        <div class="container">
-          <h1>Résumé</h1>
+          <div class="resume-section">
+            <p><strong>BA in Business engineering</strong> @ Universidad del Pacífico
+              <br><em>2010 - 2015</em></p>
+          </div>
+        </div>
 
-          <div class="resume">
-            <div class="resume-column">
+        <div class="resume-section">
+          <h2>Courses</h2>
+          <p>Introduction to Computer Science from <b>Harvard University</b></p>
+        </div>
 
-              <div class="resume-section">
-                <h2>Work</h2>
-                <p><strong>Service designer</strong> @ Philips Amsterdam
-                <br><em>2020 - 2021</em></p>
-                <p class="mini">Supported projects across business channels and applied design-led activities.</p>
-              </div>
+        <div class="resume-section">
+          <h2>Languages</h2>
+          <p>Spanish (native), English (fluent)</p>
+        </div>
 
-              <div class="resume-section">
-                <p><strong>Design researcher</strong> @ Oblo
-                <br><em>2017 - 2019</em></p>
-                <p class="mini">Evolved the project with further research, content and initiatives.</p>
-              </div>
+      </div>
 
-              <div class="resume-section">
-                <p><strong>Project Manager</strong> @ LIQUID
-                <br><em>2017 - 2019</em></p>
-                <p class="mini">Lead the design process for a web software development cross-functional team.</p>
-              </div>
+      <div class="resume-column">
 
-              <div class="resume-section">
-                <p><strong>Co-Funder</strong> @ LikeHome
-                <br><em>2017 - 2018</em></p>
-                <p class="mini">Lead and managed the design strategy.</p>
-              </div>
+        <div class="resume-section">
+          <h2>Skills</h2>
+          <div class="resume-section">
+            <p>
+User research, affinity mapping, storyboarding, journey mapping, service blueprinting, stakeholder mapping, wireframing, user flows, prototyping, usability testing, scrum, Design Sprints, value proposition, business model, north star, product competency model.
+            </p>
+          </div>
 
-              <div class="resume-section">
-                <p><strong>Project Manager</strong> @ Tekton Labs
-                <br><em>2015 - 2017</em></p>
-                <p class="mini">Managed web and mobile software development projects. Responsible for ideation and design deliverables.</p>
-              </div>
-            </div>
-
-            <div class="resume-column">
-
-              <div class="resume-section">
-                <h2>Education</h2>
-                <p><strong>Master in Service Design</strong> @ Politecnico di Milano
-                <br><em>2019 - 2021</em></p>
-                <p class="mini">Graduated cum laude.</p>
-              </div>
-
-              <div class="resume-section">
-
-                <p><strong>BA in Business engineering</strong> @ Universidad del Pacífico
-                <br><em>2010 - 2015</em></p>
-              </div>
-
-              <div class="resume-section">
-                <h2>Languages</h2>
-                <p>Spanish (native), English (fluent), Italian (basic), French (basic).</p>
-              </div>
-
-            </div>
-
-            <div class="resume-column">
-
-              <div class="resume-section">
-                <h2>Skills</h2>
-                  <p>User research, affinity mapping, story boarding, journey mapping, service blueprinting, stakeholder mapping, wireframing, user flows, prototyping, usability testing, Scrum, Design Sprints, value proposition, business model..</p>
-              </div>
-
-              <div class="resume-section">
-                <h2>Tools</h2>
-                  <p>Sketch, Figma, Origami, Principle, Invision, Photoshop, Illustrator, Premiere, Slack, Jira, Confluence, Basecamp, Trello.</p>
-              </div>
-
-              <div class="resume-section">
-                <p><a target="_blank" href="./files/CV - Andrea Pastor Palacios.pdf">Read the full résumé →</a></p>
-              </div>
-
-            </div>
-
+          <div class="resume-section">
+            <h2>Tools</h2>
+            <p>Mixpanel, DataDog, Kibana, Looker, Hotjar, UserTesting, WalkMe, Hubspot, Sketch, Figma, Origami, Principle, Invision, Photoshop, Illustrator, Premiere, GitLab, Miro, FigJam, Lucid, Slack, Jira, Confluence, Basecamp, Trello.</p>
           </div>
 
         </div>
+        <div class="resume-section">
+          <p><a target="_blank" href="../static/files/CV - Andrea Pastor Palacios.pdf">Read the full résumé →</a></p>
+        </div>
+
       </div>
+
+    </div>
+
+  </div>
+</div>
 
 {% endblock %}

@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <title>Andrea Pastor - Service Design Portfolio</title>
     <meta name="description" content="I’m Andrea pastor, a service designer with a background in business and experience designing digital products. This is my Service Design Portfolio.">
-    <meta name="keywords" content="Service, Design, Designer, Portfolio, Digital, Technology, Business, Product, Experience, UX, designer, solution">
+    <meta name="keywords" content="Service, Design, Designer, Portfolio, Digital, Technology, Business, Product, Manager, Experience, UX, designer, solution">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="../static/favicon/site.webmanifest">
     <link rel="mask-icon" href="../static/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -19,8 +19,9 @@
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:700&display=swap" rel="stylesheet">
+    <!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:700|Noto+Color+Emoji&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../static/main.css">
@@ -40,13 +41,13 @@
         <div class="container">
           <div class="header">
             <div class="logo">
-              <a class="header header-logo" href="index.html">Andrea Pastor</a>
+              <a class="header header-logo" href="{{ url_for('home') }}">Andrea Pastor</a>
             </div>
 
             <nav>
               <ul>
-                <li><a class="header header-active" href="index.html">Work</a></li>
-                <li><a class="header" href="about.html">About</a></li>
+                <li><a class="header header-active" href="{{ url_for('home')}}">Work</a></li>
+                <li><a class="header" href="{{ url_for('about')}}">About</a></li>
               </ul>
             </nav>
 

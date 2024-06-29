@@ -1,67 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156985767-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+{% extends "layout.html" %}
 
-      gtag('config', 'UA-156985767-1');
-    </script>
+{% block title %}
+Andrea Pastor - Product and Design portfolio
+{% endblock %}
 
-    <!-- Meta tags -->
-    <meta charset="utf-8">
-    <title>Andrea Pastor - Service Design Portfolio</title>
-    <meta name="description" content="I’m Andrea pastor, a service designer with a background in business and experience designing digital products. This is my Service Design Portfolio.">
-    <meta name="keywords" content="Service, Design, Designer, Portfolio, Digital, Technology, Business, Product, Experience, UX, designer, solution">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-
-  </head>
-
-  <body>
-
-    <div class="wrapper">
-
-      <!-- Header -->
-      <header>
-        <div class="container">
-          <div class="header">
-
-            <div class="logo">
-              <a class="header header-logo" href="index.html" onclick="gtag('event', 'Clicks', {'event_category': 'Header','event_label': 'Logo',});">Andrea Pastor</a>
-            </div>
-
-            <nav>
-              <ul>
-                <li><a class="header" href="index.html" onclick="gtag('event', 'Clicks', {'event_category': 'Header','event_label': 'Work',});">Work</a></li>
-                <li><a class="header header-active" href="about.html" onclick="gtag('event', 'Clicks', {'event_category': 'Header','event_label': 'About',});">About</a></li>
-              </ul>
-            </nav>
-
-          </div>
-        </div>
-      </header>
-
+{% block main %}
       <!-- Hero -->
       <div class="section-main-hero">
         <div class="container">
@@ -168,46 +111,4 @@
         </div>
       </div>
 
-
-
-      <!-- Footer -->
-      <hr>
-      <footer>
-        <div class="container">
-          <div class="footer-content">
-
-
-            <h2>Say hello</h2>
-            <p>Feel free to reach out! I'm always happy to chat.</p>
-            <p><a href="mailto:andreapastorp@gmail.com">andreapastorp@gmail.com</a></p>
-            <div class="social">
-              <p class="caption">
-                <a target="_blank" href="https://www.linkedin.com/in/andreapastorp/">linkedin</a> /
-                <a target="_blank" href="https://medium.com/@andreapastorp">medium</a>
-              </p>
-            </div>
-            <p class="caption">@2021 Design by Andrea Pastor</p>
-
-          </div>
-        </div>
-      </footer>
-
-
-
-    </div> <!-- Wrapper -->
-
-
-
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.7.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
-  </body>
-</html>
+{% endblock %}

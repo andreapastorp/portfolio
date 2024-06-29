@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Andrea Pastor - Product and Design portfolio
+{% endblock %}
+
+{% block main %}
+<!-- Hero -->
+<div class="section-main-hero">
+  <div class="container">
+
+    <div class="hero-text">
+      <h1 class="big">Hey. I’m Andrea, a service designer,  experiences seeker, curious learner, problem solver and technology lover.</h1>
+      <p class="highlight">With a background in business and experience designing experiences, I’m passionate about creating  meaningful <strong>experiences people will love</strong> and am always looking for opportunities to explore and learn 🚀.</p>
+    </div>
+
+    <div class="arrow">
+      <div class="container">
+
+        <a id="link-to-projects" href="#section-projects">
+          <img src="./img/chevron-down.svg" alt="">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="section-projects" id="section-projects">
+  <div class="container">
+
+    <h2>Selected work</h2>
+    <div class="project-grid">
+
+
+      <div class="project">
+        <a class="project-link" href="./projects/gerrard-street.html" onclick="gtag('event', 'Clicks', {'event_category': 'Projects','event_label': 'Roommates',});">
+          <div class="project-image">
+            <img src="./img/gerrard street-thumb.png" alt="">
+          </div>
+          <h3>Augmenting the everyday listening experience</h3>
+        </a>
+      </div>
+
+      <div class="project">
+        <a class="project-link" href="./projects/twill-by-maersk.html" onclick="gtag('event', 'Clicks', {'event_category': 'Projects','event_label': 'Roommates',});">
+          <div class="project-image">
+            <img src="./img/twill-thumb.jpg" alt="">
+          </div>
+          <h3>Connecting companies along the supply chain to expand logistics</h3>
+        </a>
+      </div>
+
+      <div class="project">
+        <a class="project-link" href="./projects/connecting-roommates.html" onclick="gtag('event', 'Clicks', {'event_category': 'Projects','event_label': 'Roommates',});">
+          <div class="project-image">
+            <img src="./img/roommates-cover2.png" alt="">
+          </div>
+          <h3>Enhancing the way people connect and live with roommates</h3>
+        </a>
+      </div>
+
+      <div class="project">
+        <a class="project-link" href="./projects/interbank.html" onclick="gtag('event', 'Clicks', {'event_category': 'Projects','event_label': 'Financial',});">
+          <div class="project-image">
+            <img src="./img/bank-cover.png" alt="">
+          </div>
+          <h3>Creating valuable digital financial experiences in a Peruvian Bank</h3>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

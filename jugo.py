@@ -60,14 +60,6 @@ def get_projects(jinja_env: Environment, template_folder: Path) -> list[Project]
     return projects
 
 
-def ensure_projects_folders_exist(output_folder, projects: list[Project]) -> None:
-    """
-    Ensure that the required folder structure exists for each project.
-    """
-    for project in projects:
-        (output_folder / project.path.parent).mkdir(parents=True, exist_ok=True)
-
-
 def render_file(jinja_env: Environment, write_path: Path, template_path: Path, **kwargs) -> None:
     """
     Render a single template at `template_path` to `write_path`.
@@ -75,25 +67,6 @@ def render_file(jinja_env: Environment, write_path: Path, template_path: Path, *
     """
     with write_path.open("w") as f:
         f.write(jinja_env.get_template(str(template_path)).render(**kwargs))
-
-
-def render_portfolio(jinja_env: Environment, output_folder: Path, projects: list[Project]) -> None:
-    """
-    Render the portfolio into `output_folder` using a given jinja environment and list of projects.
-    """
-    ensure_projects_folders_exist(output_folder, projects)
-    for project in projects:
-        render_file(jinja_env, output_folder / project.path, project.path)
-
-    for page in MAIN_PAGES:
-        render_file(jinja_env, output_folder / page, Path(page), projects=projects)
-
-
-def copy_static_files(folder: Path, output_folder: Path, static_folder: str = "static") -> None:
-    """
-    Copy the folder with static files into the generated html folder.
-    """
-    shutil.copytree(folder / static_folder, output_folder / static_folder, dirs_exist_ok=True)
 
 
 def generate(folder: Path) -> None:
@@ -104,9 +77,21 @@ def generate(folder: Path) -> None:
     output_folder = folder / "html"
     env = Environment(loader=FileSystemLoader(template_folder))
 
+    # ensure that the output folder has a `projects` folder in it
+    (output_folder / "projects").mkdir(parents=True, exist_ok=True)
+
     projects = get_projects(env, template_folder)
-    render_portfolio(env, output_folder, projects)
-    copy_static_files(folder, output_folder)
+
+    # render all the project templates
+    for project in projects:
+        render_file(env, output_folder / project.path, project.path)
+
+    # render the main pages
+    for page in MAIN_PAGES:
+        render_file(env, output_folder / page, Path(page), projects=projects)
+
+    # copy all the static files into the output folder
+    shutil.copytree(folder / "static", output_folder / "static", dirs_exist_ok=True)
 
 
 def serve(folder: Path, port: int) -> None:

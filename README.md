@@ -21,3 +21,7 @@ Jugo generates portfolios!
 Basically just run `python jugo.py`; see `python jugo.py --help` for additional options.
 Python requirements are specified in `requirements.txt` and can be installed from there
 (`pip install -r requirements.txt`).
+
+# License
+Source code is licensed under [MIT license](https://opensource.org/license/mit).
+Content of the site is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). 

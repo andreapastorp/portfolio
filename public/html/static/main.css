@@ -1,0 +1,501 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+font-size: 1.125em;
+font-weight: 400;
+font-family: "Karla", "HelveticaNeue", "Helvetica Neue", "Noto Color Emoji", Helvetica, Arial, sans-serif;
+color: #202020; }
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: border-box;
+	padding: 0 20px;
+}
+
+/*
+	#wrapper {
+		max-width: 964px;
+		margin: 0 auto;
+		display:block;
+		padding: 0 20px;	}
+
+	/* Larger than phablet */
+/*	@media (min-width: 550px) {
+		.wrapper {
+			padding: 0 30px;	}
+	}
+*/
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header nav ul {
+	padding: 0;
+	margin: 0;	}
+
+header nav ul li {
+	display: inline-block;
+	list-style: none;
+	padding-left: 30px;	}
+
+.header {
+	height: 70px;
+	line-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, h2, h3, h4, h5, h6 {
+font-family: "Poppins", sans-serif;
+margin-top: 0;
+margin-bottom: 15px;
+font-weight: 700; }
+h1 { font-size: 1.33em; line-height: 1.2em; margin-bottom: 15px;}
+h2 { font-size: 1.33em; line-height: 1.2em; }
+h3 { font-size: 1em; }
+h4 {font-family: "Karla", sans-serif; font-size: 0.83em; margin-bottom: 5px; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1.big { font-size: 1.85em; line-height: 1.25em; }
+}
+
+p {
+margin-bottom: 30px;
+margin-top: 0;
+letter-spacing: -0.05em;
+line-height: 1.25em; }
+footer p{
+  margin-bottom: 0px;
+}
+
+.highlight {
+  font-size: 1.22em;
+  margin-bottom: 0;
+}
+
+.mini, a.mini {
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 0.875em;
+}
+
+.caption {
+font-size: 0.875em;
+color: #afafaf;
+text-align: center;
+margin-top: 5px;
+}
+
+ol, ul {
+  margin: 0 0 30px 0;
+}
+
+.content-text li {
+  font-size: 0.9375em;
+  letter-spacing: -0.05em;
+  padding: 0 0 5px 0 ;
+}
+
+/* P modifiers for the About page resume section */
+.resume-section p {
+  margin-bottom: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  color: #07A34F;
+	text-decoration: none;
+	transition: .2s;	}
+a:hover {
+  color: #0D6D3A; }
+
+
+
+a.header {
+	color: #202020;
+	text-decoration: none;	}
+
+a.header:hover {
+	color: #07A34F;
+}
+
+a.header-active {
+	color: #07A34F;
+	font-weight: 700;	}
+
+a.header-logo {
+	font-weight: 700;
+	font-size: 1.333em;	}
+
+a.project-link {
+	color: #202020;	}
+
+@media (min-width: 550px) {
+}
+	a.project-link:hover{
+		color: #07A34F; }
+
+/* Hero for main and about
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section-main-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .section-main-hero {
+    padding-top: 0px;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .hero-text {
+		width: 75%;	}
+}
+
+.arrow {
+	margin-top: 30px;
+	text-align: center;	}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .arrow {
+		margin-top: 60px;	}
+}
+
+.arrow img {
+	transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+	    transition-property: all;
+	    transition-duration: 0.8s;
+	    transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+	    transition-delay: 0s
+}
+
+.arrow img:hover {
+	transform: translate(0,-5px);  }
+
+/* Image for about */
+
+.image-container {
+	display: flex;
+	justify-content: center; }
+
+.hero-image {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 30px; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .image-container {
+		float: right; }
+}
+
+/* Projects in main page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-projects {
+	padding: 30px 0 30px 0;
+  background-color: #F9F9F9;	}
+
+.project {
+	margin: 30px 0 60px 0 ; }
+
+.project-image {
+  display: flex;
+  align-items: flex-start;
+  height: 180px;
+  margin-bottom: 15px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+	border-radius: 3px;
+	box-shadow: 0px 2px 5px 0px rgba(32,32,32,0.25);
+	transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+	    transition-property: all;
+	    transition-duration: 0.8s;
+	    transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+	    transition-delay: 0s
+}
+
+.project-image img {
+	display: block;
+	width: 100%;
+}
+
+.project:hover .project-image {
+	transform: translate(0,-5px);
+	box-shadow: 0px 10px 20px 0px rgba(32,32,32,0.25);
+	}
+
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .section-projects {
+		padding: 60px 0 60px 0;	}
+	.project-grid {
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: space-between; }
+  .project {
+		width: 47.5%;
+    margin: 30px 0 30px 0 ;}
+}
+
+/* About
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section-resume {
+	margin-top: 30px;
+  margin-bottom: 30px;	}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .section-resume {
+		margin-top: 60px;	}
+	.resume {
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: space-between; }
+}
+
+.resume-column {
+	margin-bottom: 30px;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .resume-column {
+		width: 30%; }
+}
+
+.resume-section {
+  margin-bottom: 30px;  }
+
+
+/* Hero for projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section-hero {
+	height: 200px;
+	overflow: hidden;
+
+}
+
+.section-hero#twill {
+	background: #F0BD90;}
+
+.section-hero#gerrard-street {
+  background: #2AB880;}
+
+.section-hero#roommates {
+  background: #03A9F4;}
+
+.section-hero#interbank {
+  background: #9CE5B9;}
+
+.section-hero img {
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+	.section-hero, .section-main-hero {
+		height: 516px; }
+
+	.section-hero img {
+		margin-top: 60px; }
+}
+
+/* Introduction section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-introduction {
+  padding: 60px 0 30px 0;
+}
+@media (min-width: 550px) {
+  .section-introduction {
+    padding: 120px 0 60px 0;
+  }
+}
+
+.overview {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .overview {
+    margin-top: 60px;
+  }
+
+  .summary {
+		width: 47.5%;}
+
+  .process {
+    width: 30%;}
+}
+
+/* Content sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-grey, .section-white  {
+  padding: 30px 0 30px 0;
+}
+.section-grey {background-color: #F9F9F9;}
+
+@media (min-width: 550px) {
+  .section-grey, .section-white {
+    padding: 60px 0 60px 0;
+  }
+}
+
+/* Images and video
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.content-single-image, .content-multiple-images, .content-video {
+	overflow: hidden;
+}
+
+.content-single-image img, .content-multiple-images img, .content-video video {
+  display: block;
+	width: 100%;
+	margin-top: 30px;
+}
+
+@media (min-width: 550px) {
+  .content-multiple-images {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+
+  .content-multiple-images img {
+    width:30%;
+  }
+}
+
+/* Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #202020;
+    opacity: 0.1;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+  margin-top: 90px;
+  margin-bottom: 60px;
+  }
+
+footer p {
+	text-align: center;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   }
+
+.social {
+  margin-top: 30px;
+}
+
+
+/* Need to delete
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* for the projects page */
+.paragraph-image {
+	height: 400px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.paragraph-image img {
+	position: absolute;
+	height: 420px;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+}
+.paragraph ul {
+	font-size: 16px;
+}
+
+
+/* css for tablet breakpoint */
+
+@media (max-width: 768px) {
+
+  /* For the projects page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+	.paragraph-image {
+		height: 300px;
+		width: 100%;
+
+		position: relative;
+	}
+	.paragraph-image img {
+		position: absolute;
+		height: 300px;
+		width: auto;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translateY(-50%) translateX(-50%);
+	}
+	.content {
+		max-width: 1000px;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+}
+/* css for mobile breakpoint */
+
+@media (max-width: 600px) {
+
+	.paragraph-image {
+		height: 220px;
+		width: 100%;
+		position: relative;
+	}
+	.paragraph-image img {
+		position: absolute;
+		height: 220px;
+		width: auto;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translateY(-50%) translateX(-50%);
+	}
+
+
+}
+
+
+.content {
+	margin-bottom: 60px;
+}

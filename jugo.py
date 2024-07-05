@@ -41,7 +41,7 @@ def get_projects(jinja_env: Environment, template_folder: Path) -> list[Project]
     """
     projects = []
 
-    for file in (template_folder / "projects").glob("*.html"):
+    for file in sorted((template_folder / "projects").glob("*.html")):
         template_path = file.relative_to(template_folder)
         template = jinja_env.get_template(str(template_path))
 

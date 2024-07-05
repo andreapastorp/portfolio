@@ -1,3 +1,8 @@
+# Portfolio
+Just a repo for my portfolio.
+
+Jugo was created by [@maarten990](https://github.com/maarten990).
+
 # Jugo; the juiciest portfolio generator.
 
 Jugo generates portfolios!

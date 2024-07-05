@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 """
 Jugo; the juiciest portfolio generator.
 """
